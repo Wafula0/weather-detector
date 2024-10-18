@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather projector</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="text" name="city" ><br><br>
+        <input type="submit" value="search">
+    </form>
+    <h3>{{city}}</h3>
+   
+    <h5>Country_Code:{{country_code}}</h5>
+    <h5>Coordinate:{{coordinate}}</h5>
+    <h5>Temperature:{{temp}}</h5>
+    <h5>Pressure:{{pressure}}</h5>
+    <h5>Humidity:{{humidity}}</h5>
+    
+</body>
+</html>
